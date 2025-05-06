@@ -3,9 +3,9 @@
     function connectToDB() {
 		try {
 			$dbName = 'voipSMS';
-			$dbUser = 'voipSMS_user';
-			$dbHost = 'INSERT THE ADDRESS OF YOUR DATABSE HERE';
-			$dbPass = 'INSERT YOUR PASSWORD HERE';
+			$dbUser = 'postgres';
+			$dbHost = 'postgresql://postgres:EgBxZofoCsAScNidYowlGaMNxPJBnaHh@postgres.railway.internal:5432/railway';
+			$dbPass = 'EgBxZofoCsAScNidYowlGaMNxPJBnaHh';
 
 			$db = new PDO("mysql:host={$dbHost};dbname={$dbName}", 
 				$dbUser, $dbPass);
